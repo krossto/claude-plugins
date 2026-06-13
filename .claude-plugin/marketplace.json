@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "krossto-plugins",
+  "description": "krossto's Claude Code plugins",
+  "owner": { "name": "krossto" },
+  "plugins": [
+    {
+      "name": "codex-design-review",
+      "source": { "source": "github", "repo": "krossto/codex-design-review" },
+      "description": "Cross-model review of design documents by OpenAI Codex CLI. Built for the Superpowers spec/plan workflow.",
+      "author": { "name": "krossto" },
+      "homepage": "https://github.com/krossto/codex-design-review",
+      "repository": "https://github.com/krossto/codex-design-review",
+      "keywords": ["superpowers", "code-review", "codex", "cross-model"],
+      "category": "development"
+    },
+    {
+      "name": "rcd",
+      "source": { "source": "github", "repo": "krossto/rcd" },
+      "description": "Lifecycle management for per-project Claude Code remote-control systemd instances",
+      "author": { "name": "krossto" },
+      "homepage": "https://github.com/krossto/rcd",
+      "repository": "https://github.com/krossto/rcd",
+      "license": "MIT",
+      "keywords": ["remote-control", "systemd", "daemon", "claude-code"],
+      "category": "productivity"
+    }
+  ]
+}
