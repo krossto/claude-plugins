@@ -34,7 +34,7 @@ Append an entry to `.claude-plugin/marketplace.json`:
 ```json
 {
   "name": "<plugin-name>",
-  "source": { "source": "github", "repo": "krossto/<repo>" },
+  "source": { "source": "url", "url": "https://github.com/krossto/<repo>.git" },
   "description": "<one line>",
   "author": { "name": "krossto" },
   "homepage": "https://github.com/krossto/<repo>",
@@ -43,7 +43,7 @@ Append an entry to `.claude-plugin/marketplace.json`:
 }
 ```
 
-Omit `version`/`ref`/`sha` to keep SHA-driven tracking. Then run `claude plugin validate .`.
+A `url` (HTTPS) source lets anyone install over anonymous HTTPS with no git/SSH setup. Omit `version`/`ref`/`sha` to keep SHA-driven tracking (every push to the default branch is a new version). Then run `claude plugin validate .`.
 
 ## License
 
